@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Money Tracking App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1><center>Money Tracking App</center></h1>
+  <div class="track">
+    <form id="expense-form">
+        <h2>Add Expense</h2>
+        <div>
+          <label for="expense-description">Description:</label>
+          <input type="text" id="expense-description" required>
+        </div>
+        <div>
+          <label for="expense-amount">Amount:</label>
+          <input type="number" id="expense-amount" required>
+        </div>
+        <button type="submit">Add Expense</button>
+      </form>
+    
+      <div id="expense-list">
+        <h2>Expenses</h2>
+        <ul id="expenses"></ul>
+      </div>
+    
+      <!-- income form -->
+      
+      <form id="income-form">
+        <h2>Add Income</h2>
+        <div>
+          <label for="income-description">Description:</label>
+          <input type="text" id="income-description" required>
+        </div>
+        <div>
+          <label for="income-amount">Amount:</label>
+          <input type="number" id="income-amount" required>
+        </div>
+        <button type="submit">Add Income</button>
+      </form>
+      
+      <div id="income-list">
+        <h2>Income</h2>
+        <ul id="income"></ul>
+      </div>
+    
+  </div>
+  <script src="scripts.js"></script>
+</body>
+</html>
